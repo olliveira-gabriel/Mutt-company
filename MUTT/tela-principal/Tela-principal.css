@@ -97,3 +97,30 @@ Container-Principal {
     width: 300px; /* Define a largura das imagens das marcas como 300px */
     height: 300px; /* Define a altura das imagens das marcas como 300px */
 }
+.novidades{
+    display: flex;
+    flex-direction: row;
+}
+.Card-Novidades1{
+    border: 1px solid#000000;
+    width: 18%;
+    text-align: center;
+    height: 47vh;
+    padding: 1%;
+}
+.Card-Novidades1 img {
+    border: 1px solid#000000;
+    width: 300px;   
+    
+}
+.preco{
+    text-align: end;
+    margin: 5%;
+    font-size: 25px;
+    margin: 0% 0% 5% 0%;
+}
+.nome{
+    text-align: left;
+    margin: 5% 0% 15% 5%;
+    font-size: 23px;
+}
