@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    background-color: black ;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Tela{
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 30px;
+    padding: 30px 40px;
+}
+
+.Tela h1{
+    font-size: 56px;
+    text-align: center;
+    letter-spacing: 7px;
+}
+.Tela .input{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input input::placeholder{
+    color: #fff;
+}
+
+.Tela .Lembrar{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    margin: -15px 0 15px;
+}
+
+.Lembrar label input {
+    accent-color: #fff;
+    text-decoration: none;
+}
+
+.Lembrar a {
+    color:black;
+}
+
+.Lembrar a:hover {
+    text-decoration: underline;
+}
+
+.bt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 20px;
+    height: 20px;
+}
+
+.btn:checked{
+    width: 20px;
+    height: 20px;
+}
+
+.Tela .bt{
+    width: 100%;
+    height: 60px;
+    background: rgb(119, 119, 119);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.Tela .Registro{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.Registro p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.Registro p a {
+    text-decoration: underline;
+}
+
+.Tela .center {
+    text-align: center;
+    justify-content: center;
+}

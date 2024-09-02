@@ -1,0 +1,163 @@
+Container-Principal {
+    display: flex; 
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    height: 100vh; /* Define a altura do container como 100% da altura */
+    width: 100%; /* Define a largura do container como 100% da largura*/
+    top: 0; /* Posiciona o container no topo da tela */
+    left: 0; /* Posiciona o container na esquerda da tela */
+    margin: 0%;
+}
+/* Cabeçalho */
+.Cabecalho {
+    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    display: flex; 
+    align-items: center; /* Alinha os itens do cabeçalho verticalmente no centro */
+    color: #ffff; /* Define a cor do texto do cabeçalho como branco */
+    justify-content: space-between; /* Distribui os itens do cabeçalho uniformemente entre as extremidades */
+    padding: 0% 2%; /* Define o espaçamento interno do cabeçalho */
+    position: fixed; /* Define o header como fixo */
+    top: 0; /* Posiciona o header na parte superior da tela */
+    left: 0; /* Posiciona o header na parte esquerda da tela */
+    width: 99%; /* Define a largura do header como 99% da tela */
+}
+
+.Titulo {
+    font-size: 30px; /* Define o tamanho da fonte  30px */
+}
+
+/* Carrinho e Login */
+.icons {
+    display: flex; 
+    flex-direction: row; /* Define a direção dos ícones como linha */
+}
+
+.MUTT-logo {
+    width: 100px; /* Define a largura da logo como 100px */
+    height: 100px; /* Define a altura da logo como 100px */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre a logo */
+}
+
+.carrinho {
+    display: flex; 
+    flex-direction: column; /* Define a direção dos itens do carrinho como coluna */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o carrinho */
+}
+
+.Carrinho-logo {
+    width: 100px; /* Define a largura da imagem do carrinho como 100px */
+    height: 100px; /* Define a altura da imagem do carrinho como 100px */
+    margin-bottom: -28px; /* Define a margem inferior da imagem do carrinho como -28px */
+}
+
+.carrinho p {
+    margin: 0; /* Remove a margem superior e inferior do texto do carrinho */
+    text-align: center; /* Alinha o texto do carrinho no centro */
+}
+
+.user {
+    display: flex; 
+    flex-direction: column; /* Define a direção dos itens do usuário como coluna */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o usuário */
+}
+
+.User-logo {
+    width: 100px; /* Define a largura da imagem do usuário como 100px */
+    height: 100px; /* Define a altura da imagem do usuário como 100px */
+    margin-bottom: -28px; /* Define a margem inferior da imagem do usuário como -28px */
+}
+
+.user p {
+    margin: 0; /* Remove a margem superior e inferior do texto do usuário */
+    text-align: center; /* Alinha o texto do usuário no centro */
+}
+.oakley{
+    display: flex;
+    flex-direction: column; /* Mudamos para coluna para o h1 ficar acima */
+    justify-content: center; /* Centraliza o h1 verticalmente */
+    align-items: center; /* Centraliza o h1 horizontalmente */
+    background-color: #DBDBDB;
+    height: auto; /* Ajusta a altura para acomodar o h1 */
+    width: 80%;
+    margin: 10% 10%;
+    height: 170vh;
+    
+}
+.pimeira_coluna{
+    display: flex;
+    flex-direction: row; /* Cards em linha */
+    justify-content: space-around; /* Distribui os cards uniformemente */
+    align-items: center; /* Alinha os cards verticalmente no centro */
+    width: 100%; /* Largura total da seção Novidades */
+}
+.card1-oakley{
+    background-color: #ffffff;
+    width: 18%;
+    text-align: center;
+    height: 47vh;
+    padding: 1%;
+    margin-top: 20px; /* Adiciona margem para separar os cards do h1 */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o carrinho */
+}
+.card1-oakley img{
+    width: 100%; /* Define a largura da imagem como 100% do card */
+    height: auto; /* Define a altura da imagem para se ajustar automaticamente à largura */
+    object-fit: cover; /* Faz com que a imagem preencha o card, recortando as partes que não cabem */
+}
+.preco{
+    text-align: end;
+    margin: 5%;
+    font-size: 25px;
+    margin: 0% 0% 5% 0%;
+}
+.nome{
+    text-align: left;
+    margin: 5% 0% 15% 5%;
+    font-size: 23px;
+}
+.promocao{
+    text-align: end;
+    margin: 5%;
+    font-size: 25px;
+    margin: 0% 0% 5% 0%;
+    text-decoration: line-through;
+    text-decoration-color: red;
+
+}
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0%;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Faz o footer ocupar toda a largura da página */
+    background-color: #000000; /* Define a cor de fundo do footer */
+    color: #ffffff;
+  }
+  .sobre{
+      width: 20%;
+  }
+  .contato img{
+      width: 40%;
+      padding: 2%;
+  }
+  .redes{
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  h3{
+      text-align: center;
+  }
+  .rodape p{
+     text-align: center; 
+  }
+  .MUTT-footer {
+      width: 10%; /* Define a largura da logo como 100px */
+      height: 10%; /* Define a altura da logo como 100px */
+      align-items: baseline;
+      margin: 2% 0% 0% 0%;
+      
+  }

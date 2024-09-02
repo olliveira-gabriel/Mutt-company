@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tela-principal.css">
+    <title>MUTT</title>
+</head>
+<body>
+    <main class="Container-Principal">
+        <!-- Define a seção principal do conteúdo da página -->
+        <header class="Cabecalho">
+            <!-- Define o cabeçalho da página -->
+            <img id="Logo-Cabecalho" class="MUTT-logo" src="imagens/imagens-header/Logo DARK.png" alt="Logo MUTT COMPANY" onclick="Logo_Header()">
+            <!-- Insere a logo da empresa, o `onclick="Logo_Header()"` chama a função JavaScript "Logo_Header()" quando a logo é clicada. -->
+            <h1 class="Titulo">MUTT COMPANY</h1>
+            <!-- Define o título do header -->
+            <div class="icons">
+                <!-- Contém os ícones do carrinho e do usuário -->
+                <div class="carrinho">
+                    <!-- Define o ícone do carrinho -->
+                    <img class="Carrinho-logo" src="imagens/imagens-header/Carrinho branco.png" alt="Carrinho">
+                    <!-- Insere a imagem do carrinho -->
+                    <p>Carrinho</p>
+                    <!-- Define o texto "Carrinho" -->
+                </div>
+                <div id="Entrar" class="user" onclick="Login_Header()">
+                    <!-- Define o ícone do usuário -->
+                    <img class="User-logo" src="imagens/imagens-header/User .png" alt="Carrinho">
+                    <!-- Insere a imagem do usuário -->
+                    <p>Entrar</p>
+                    <!-- Define o texto "Entrar" -->
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <!-- Define a seção do banner -->
+            <img src="imagens/Banner.png" alt="" class="banner">
+            <!-- Insere a imagem do banner -->
+        </section>
+            <h1 class="Marcas">marcas</h1>
+            <!-- Define o título da seção de marcas -->
+        <section class="card-Marcas">
+            <!-- Define a seção das marcas -->
+            <div id="card-oakley" class="card-oakley">
+                    <!-- Define o card da marca Oakley -->
+                    <img src="imagens/Logos/Logo-oakley.png" alt="Logo" onclick="Tela_oakley()" >
+                    <!-- Insere a logo da Oakley -->
+            </div>
+            <div class="card-nike">
+                <!-- Define o card da marca Nike -->
+                <img src="imagens/Logos/Logo-Nike.png" alt="Logo">
+                <!-- Insere a logo da Nike -->
+            </div>
+            <div class="card-Mizuno">
+                <!-- Define o card da marca Mizuno -->
+                <img src="imagens/Logos/Logo-Mizuno.png" alt="Logo">
+                <!-- Insere a logo da Mizuno -->
+            </div>
+        </section>
+        <section class="Novidades">
+            <h1 class="Titulo-Novidades">Novidades</h1>
+            <!-- Define o título da seção de novidades -->
+            <div class="card-Novidades">
+                <!-- Contém os cards de novidades -->
+
+                <div class="Card-Novidades1">
+                    <!-- Define o primeiro card de novidades -->
+                    <img src="imagens/Produtos-oakley/Oakley Teeth Blue Grey-foto1.png" alt="imagem de tenis">
+                    <!-- Insere a imagem do produto -->
+                    <p class="nome">Oakley Teeth Blue Grey</p>
+                    <!-- Define o nome do produto -->
+                    <p class="preco">R$ 1249,99</p>
+                    <!-- Define o preço do produto -->
+                </div>
+                <div class="Card-Novidades2">
+                    <!-- Define o segundo card de novidades -->
+                    <img src="imagens/Produtos-nike/Nike Air Max 95 OG Neon Yellow-foto1.png" alt="imagem de tenis">
+                    <!-- Insere a imagem do produto -->
+                    <p class="nome">Nike Air Max 95</p>
+                    <!-- Define o nome do produto -->
+                    <p class="preco">R$ 1.250,00</p>
+                    <!-- Define o preço do produto -->
+                </div>
+                <div class="Card-Novidades3">
+                    <!-- Define o terceiro card de novidades -->
+                    <img src="imagens/Produtos-mizuno/Mizuno Wave Prophecy LS-foto1.png" alt="imagem d tenis">
+                    <!-- Insere a imagem do produto -->
+                    <p class="nome">Mizuno Wave Prophecy LS</p>
+                    <!-- Define o nome do produto -->
+                    <p class="preco">R$ 1.990,00</p>
+                    <!-- Define o preço do produto -->
+                </div>
+
+            </div>
+        </section>
+        <section class="Promocoes">
+            <h1 class="Titulo-Novidades">promoções</h1>
+            <!-- Define o título da seção de promoções -->
+            <div class="card-Novidades">
+                <!-- Contém os cards de promoções -->
+                <div class="Card-Novidades1">
+                    <!-- Define o primeiro card de promoções -->
+                    <img src="imagens/Produtos-oakley/Oakley x Piet Jaqueta Static Anorak Oliver-foto1.png" alt="imagem de tenis">
+                    <!-- Insere a imagem do produto -->
+                    <p class="nome">Oakley x Piet Jaqueta Static Anorak Olive</p>
+                    <!-- Define o nome do produto -->
+                    <p class="promocao">R$ 1249,99</p>
+                    <!-- Define o preço promocional do produto -->
+                    <p class="preco">R$ 899,99</p>
+                    <!-- Define o preço original do produto -->
+                </div>
+                <div class="Card-Novidades2">
+                    <!-- Define o segundo card de promoções -->
+                    <img src="imagens/Produtos-mizuno/Mizuno Wave Prophecy LS Mojave Desert-foto1.png" alt="imagem de tenis">
+                    <!-- Insere a imagem do produto -->
+                    <p class="nome">Mizuno Wave Prophecy LS Mojave Desert</p>
+                    <!-- Define o nome do produto -->
+                    <p class="promocao">R$ 1.250,00</p>
+                    <!-- Define o preço promocional do produto -->
+                    <p class="preco">R$ 950,00</p>
+                    <!-- Define o preço original do produto -->
+                </div>
+                <div class="Card-Novidades3">
+                    <!-- Define o terceiro card de promoções -->
+                    <img src="imagens/Produtos-nike/Nike Air Max Plus Paris Saint-Germain-foto1.png" alt="imagem d tenis">
+                    <!-- Insere a imagem do produto -->
+                    <p class="nome">Nike Air Max Plus Paris Saint-Germain</p>
+                    <!-- Define o nome do produto -->
+                    <p class="promocao">R$ 1.990,00</p>
+                    <!-- Define o preço promocional do produto -->
+                    <p class="preco">R$ 1.000,00</p>
+                    <!-- Define o preço original do produto -->
+                </div>
+            </div>
+        </section>
+        <footer class="rodape">   
+            <img id="Logo-Cabecalho" class="MUTT-footer" src="imagens/imagens-header/Logo DARK.png" alt="Logo MUTT COMPANY" onclick="Logo_Header()">
+            <div class="sobre">
+                <h3>Sobre-nós</h3>
+                <p>A loja Mutt company é Referência em moda! Estamos no mercado da moda desde 2024, quando o assunto é estilo estamos sempre dispostos a indicar a melhor opção de roupa para o modo urbano de se vestir, 
+                    trabalhamos com as melhores marcas do mercado. Nosso objetivo sempre será a satisfação dos nossos clientes e garantir que tenham a melhor experiência em compras.</p>
+            </div>
+            <div class="contato">
+                <h3>Contato</h3>
+                <p>(48)98469-3359</p>
+                <p>muttcompany@gmail.com</p>
+                <h3>Siga-nós</h3>
+                <div class="redes">
+                    <img src="imagens/imagens-footer/Logo instagram1.png" alt="">
+                    <img src="imagens/imagens-footer/Logo facebook 1.png" alt="">
+                </div>
+            </div>
+            <div class="pagamentos">
+                <h3>pagamentos</h3>
+                <img src="imagens/imagens-footer/Pagamentos 2.png" alt="">
+            </div>
+            <img id="Logo-Cabecalho" class="MUTT-footer" src="imagens/imagens-header/Logo DARK.png" alt="Logo MUTT COMPANY" onclick="Logo_Header()">
+        </footer>
+    </main> 
+    <script src="Tela-pricipal.js"></script>
+</body>
+</html>

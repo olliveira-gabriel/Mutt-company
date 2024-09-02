@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tela-Registro.css">
+    <title>Tela Registro</title>
+    
+</head>
+<body>
+
+    <main class="Container-Principal">
+        <!-- Define a seção principal do conteúdo da página -->
+        <header class="Cabecalho">
+            <!-- Define o cabeçalho da página -->
+            <img id="Logo-Cabecalho" class="MUTT-logo" src="imagens/imagens-header/Logo DARK.png" alt="Logo MUTT COMPANY" onclick="Logo_Header()">
+            <!-- Insere a logo da empresa, O  `onclick="Logo_Header()"` chama a função JavaScript "Logo_Header()" quando a logo é clicada. -->
+            <h1 class="Titulo">MUTT COMPANY</h1>
+            <!-- Define o título principal da página -->
+            <div class="icons">
+                <!-- Contém os ícones do carrinho e do usuário -->
+                <div class="carrinho">
+                    <!-- Define o ícone do carrinho -->
+                    <img class="Carrinho-logo" src="imagens/imagens-header/Carrinho branco.png" alt="Carrinho">
+                    <!-- Insere a imagem do carrinho -->
+                    <p>Carrinho</p>
+                    <!-- Define o texto "Carrinho" -->
+                </div>
+                <div class="user">
+                    <!-- Define o ícone do usuário -->
+                    <img class="User-logo" src="imagens/imagens-header/User .png" alt="Carrinho">
+                    <!-- Insere a imagem do usuário -->
+                    <p>Entrar</p>
+                    <!-- Define o texto "Entrar" -->
+                </div>
+            </div>
+        </header>
+
+        <section class="Card-Regitro">
+
+            <div class="Titulo-Card"> <h1>Registro</h1> </div>
+
+            <form class="Registro">
+                <div class="Informacoes">
+                    <input type="text" name="User" placeholder="Usuario">
+                </div>
+                <div class="Informacoes">
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="Informacoes">
+                    <input type="password" name="Password" placeholder="Senha">
+                </div>
+                <div class="Informacoes">
+                    <input type="number" name="Telefone" placeholder="Telefone">
+                </div>
+                <div class="Informacoes">
+                    <input type="text" name="Cpf" placeholder="Cpf">
+                </div>
+            </form>
+
+            <form class="Checkbox">
+                <Div class="Checkbox-Um">
+                    <input type="checkbox" value=""><label>Receber novidades</label> 
+                </Div>
+                <Div class="Checkbox-Dois">
+                    <input type="checkbox" value=""><label>Aceitar termos</label> 
+                </Div>
+
+            </form>
+
+            <div>
+                <button type="button" onclick="Registrar()" class="Button">Registrar</button>
+            </div>
+        
+        </section>
+
+    </main> 
+
+    
+</body>
+</html>
