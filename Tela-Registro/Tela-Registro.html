@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Tela-Registro.css">
-    <title>Tela Registro</title>
+    <title>Registro MUTT</title>
     
 </head>
 <body>
@@ -41,21 +41,23 @@
 
             <form>
 
-                <input class="Input-Form" type="text" placeholder="Usuario">
+                <input class="Input-Form" type="text" placeholder="Usuario" id="User">
 
-                <input class="Input-Form" type="email" placeholder="Email">
+                <input class="Input-Form" type="email" placeholder="Email" id="Email">
 
-                <input class="Input-Form" type="password" placeholder="Senha">
+                <input class="Input-Form" type="password" placeholder="Senha" id="Senha">
+
+                <input class="Input-Form" type="password" placeholder="Confirmar Senha" id="Confirmar_senha">
 
             </form>
 
             <div>
                     <label class="checkbox">Aceitar Termos</label>
-                    <input class="" type="checkbox">
+                    <input id="termos_de_contrato" class="" type="checkbox">
             </div>
 
             <div>
-                <button class="bn15">
+                <button class="bn15" onclick="Registro_usuario()">
                     Registar
                 </button>
             </div>
