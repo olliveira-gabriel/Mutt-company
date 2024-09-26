@@ -6,6 +6,12 @@ body{
     background-size: 100%;
     background-attachment: fixed;
 }
+
+@font-face {
+    font-family: MUTT;
+    src: url(Dash-Horizon-Demo.otf);
+  }
+
 .Container-Principal{
     display: flex;
     justify-content: center;
@@ -74,8 +80,9 @@ body{
 }
 
 .Card-Registro{
+font-family: MUTT;
 background-color: black;
-height: 65vh;
+height: 58vh;
 width: 25%;
 display: flex;
 flex-direction: column;
@@ -137,4 +144,9 @@ outline: none;
     position: relative;
     border: 3px solid #ffffff;
     border-radius: 20px;
+  }
+  a{
+    margin-top: 15px;
+    color: white;
+    font-size: 17px;
   }
