@@ -99,8 +99,8 @@ Container-Principal {
 .botao-tamanho {
     width: 40px; /* Largura do botão */
     height: 40px; /* Altura do botão */
-    background-color: #fffdfd; /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda */
+    background-color: #D9D9D9; /* Cor de fundo */
+    border: 2px solid black; /* Borda */
     display: inline-block; /* Exibe como bloco inline */
     text-align: center; /* Centraliza o texto */
     line-height: 40px; /* Alinha o texto verticalmente */
@@ -110,16 +110,18 @@ Container-Principal {
 .botao-tamanho input[type="radio"] {
     display: none; /* Esconde o botão de rádio padrão */
 }
-.botao-tamanho input[type="radio"]:checked + label {
-    background-color: #8b8b8b; /* Cor de fundo quando selecionado */
+.botao-tamanho input[type="radio"]:checked + label{
+    background-color: #D9D9D9; /* Cor de fundo */
+    padding: 11px;
+    margin-left: -1px;
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    border: groove red 4px;
 }
+
 .botoes{
     display: flex;
     flex-direction: row;
 }
-
-
-
 
 
 .rodape{
