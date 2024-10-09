@@ -115,7 +115,12 @@ outline: none;
 
 .checkbox{
     
-    color: white;
+    color: rgb(58, 93, 248);
+}
+
+.checkbox :hover{
+    
+    color: rgb(252, 253, 255);
 }
 
 .checkbox label{
@@ -137,6 +142,7 @@ outline: none;
     border: 3px solid #ffffff;
     border-radius: 20px;
   }
+
 .modal_termos{
     display: none; /* Escondido por padrão */
     position: fixed; /* Fica fixo na tela */
@@ -148,9 +154,22 @@ outline: none;
     overflow: auto; /* Ativa o scroll se necessário */
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
 }
+.conteudo_modal::backdrop{
+    background-color: rgb(0, 0, 0);
+}
+
 .conteudo_modal{
-    background-color: #fff;
-    margin: 15% auto; /* 15% do topo e centraliza */
-    width: 80%; /* Largura do modal */
-    
+    color: rgb(85, 73, 245);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0.1em rgb(255, 255, 255);
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.href{
+color: rgb(121, 121, 250); /* Troca a cor do Link para ficar mais visível  */
 }
