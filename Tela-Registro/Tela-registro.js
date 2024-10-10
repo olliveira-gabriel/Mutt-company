@@ -23,9 +23,8 @@ function  Registro_usuario(){
             if(senha === confirmar_senha){
                 let BancoDeDados = JSON.parse(localStorage.getItem("BancoDedados")) || {};
                 
-                if(BancoDeDados[usuario]){
-                    
-                    alert('Nome de usuário já cadastrado');
+                if (BancoDeDados[usuario]) {
+                    mostrarModal('Nome de usuário já cadastrado');
                     return;
                 }
                 BancoDeDados[usuario] = {
@@ -33,21 +32,43 @@ function  Registro_usuario(){
                     password: senha
                 };
                 localStorage.setItem("BancoDeDados", JSON.stringify(BancoDeDados));
-                
-                alert('Usuário cadastrado com sucesso!');
-                window.location.href="../Tela-Login/Tela-Login.html";
-                
-            }else('As senhas são diferentes');
-            
-        }else{
-            alert('aceite os termos')
+
+                ('Usuário cadastrado com sucesso!');
+                setTimeout(() => {
+                    window.location.href = "../Tela-Login/Tela-Login.html";
+                }, 2000);
+            } else {
+                mostrarModal('As senhas são diferentes');
+            }
+        } else {
+            mostrarModal('Por favor, aceite os termos');
         }
-    }else{
-        alert('Preencha todos os campos')
+    } else {
+        mostrarModal('Preencha todos os campos');
     }
-
-
 }
+function mostrarModal(mensagem) {
+    document.getElementById('modalMessage').innerText = mensagem;
+    document.getElementById('modalmsg').style.display = "block";
+}
+
+function fechar_modal() {
+    document.getElementById('modal_termos').style.display = "none";
+}
+
+function fechar_modal_msg() {
+    document.getElementById('modalmsg').style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target === document.getElementById('modal_termos')) {
+        fechar_modal();
+    }
+    if (event.target === document.getElementById('modalmsg')) {
+        fechar_modal_msg();
+    }
+}
+
 
 const modal = document.getElementById('modal_termos');
 
