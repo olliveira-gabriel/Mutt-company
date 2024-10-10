@@ -13,3 +13,8 @@ function Tela_oakley(){
     // Redireciona o usuário para a página "Tela-Login.html" localizada na pasta "Tela-login"
     window.location.href="../Tela-oakley/Tela-oakley.html";
 }
+
+function Tela_nike(){
+    // Redireciona o usuário para a página "Tela-Login.html" localizada na pasta "Tela-login"
+    window.location.href="../Tela-nike/Tela-nike.html";
+}
