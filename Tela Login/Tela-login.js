@@ -5,8 +5,9 @@ function Logo_Header(){
 
 function Login_Header(){
     // Redireciona o usuário para a página "Tela-Login.html" localizada na pasta "Tela-login"
-    window.location.href="../Tela-Login/Tela-Login.html";
+    window.location.href="../Tela Login/Tela-Login.html";
 }
+
 
 function logar(){
     let usuario_login = document.getElementById('usuário_login').value;
