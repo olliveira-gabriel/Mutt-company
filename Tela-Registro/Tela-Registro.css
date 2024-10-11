@@ -202,19 +202,47 @@ color: rgb(121, 121, 250); /* Troca a cor do Link para ficar mais visível  */
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    top: 150px;
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
 }
 .conteudomsg {
     background-color: #ff0000;
     color: black;
     font-weight: bold;
-    margin: 15% auto; 
     padding: 20px;
     border-radius: 15px; 
-    display: flex;
     border: none;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 150px;
+    overflow: auto;
+    
+
+    
 }
+
+.conteudomsg ::backdrop{
+    background-color: black;
+    
+}
+
+.close{
+    width: 1px;
+    position: absolute;
+    top: 22%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
 .close:hover{
     color: white;
+    
+
 }
 
