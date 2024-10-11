@@ -10,17 +10,30 @@ function Login_Header(){
 
 
 function logar(){
-    let usuario_login = document.getElementById('usuário_login').value;
-    let senha_login = document.getElementById('senha_login').value;
-    let BancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados")) || {};
 
-    if(BancoDeDados[usuario_login] && BancoDeDados[usuario_login].password === senha_login){
+    const usuario = document.getElementById('usuário_login').value;
+    const senha = document.getElementById('senha_login').value;
 
-        window.location.href="Tela-princial.html";
-        
-    }else{
-            alert('Nome de usuário ou senha incorretos.')
+    if(usuario && senha){
+        const obj = {
+            usuario: usuario,
+            senha: senha
+        };
+        const login = JSON.parse(localStorage.getItem('BancoDeDados'));
+        if(obj.usuario === login.usuario && obj.password === login.password){
+            window.location.href="../tela-principal/Tela-princial.html";
+        }
+        else{
+            alert('Usuário ou senha inválidos')
+        }
     }
+    else{
+        alert("usuário não digitou o nome ou a senha")
+    }
+
+
+
+
 
 
 
