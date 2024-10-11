@@ -41,7 +41,7 @@ function  Registro_usuario(){
 
                 ('Usuário cadastrado com sucesso!');
                 setTimeout(() => {
-                    window.location.href = "../Tela-Login/Tela-Login.html";
+                    window.location.href = "../Tela Login/Tela-Login.html";
                 }, 2000);
             } else {
                 mostrarModal('As senhas são diferentes');
