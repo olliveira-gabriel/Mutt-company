@@ -20,39 +20,33 @@ function  Registro_usuario(){
     let confirmar_senha =  document.getElementById('Confirmar_senha').value;
 
     let checkbox = document.getElementById('termos_de_contrato');
-     
 
     if(usuario && email && senha && confirmar_senha){
         
         if(checkbox.checked){
-    
+            
             if(senha === confirmar_senha){
-                let BancoDeDados = JSON.parse(localStorage.getItem("BancoDedados")) || {};
-                
-                if (BancoDeDados[usuario]) {
-                    mostrarModal('Nome de usuário já cadastrado');
-                    return;
-                }
-                BancoDeDados[usuario] = {
+                const obj = {
                     usuario: usuario,
-                    password: senha
-                };
-                localStorage.setItem("BancoDeDados", JSON.stringify(BancoDeDados));
-
-                ('Usuário cadastrado com sucesso!');
-                setTimeout(() => {
-                    window.location.href = "../Tela Login/Tela-Login.html";
-                }, 2000);
+                    senha: senha
+                    };
+                    
+                    localStorage.setItem('BancoDeDados',JSON.stringify(obj))
+                    
+                    setTimeout(() => {
+                        window.location.href = "../Tela Login/Tela-Login.html";
+                    }, 2000);
+                } else {
+                    mostrarModal('As senhas são diferentes');
+                }
             } else {
-                mostrarModal('As senhas são diferentes');
+                mostrarModal('Por favor, aceite os termos');
             }
         } else {
-            mostrarModal('Por favor, aceite os termos');
-        }
-    } else {
-        mostrarModal('Preencha todos os campos');
+            mostrarModal('Preencha todos os campos');
     }
 }
+
 function mostrarModal(mensagem) {
     document.getElementById('modalMessage').innerText = mensagem;
     document.getElementById('modalmsg').style.display = "block";
