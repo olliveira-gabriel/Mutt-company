@@ -28,7 +28,8 @@ Container-Principal {
 }
 
 .Titulo {
-    font-size: 30px; /* Define o tamanho da fonte  30px */
+    font-size: 35px; 
+    font-family: MUTT;
 }
 
 /* Carrinho e Login */
@@ -142,7 +143,7 @@ Container-Principal {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    margin: 0%;
+    margin-top: 100px;
     left: 0;
     bottom: 0;
     width: 100%; /* Faz o footer ocupar toda a largura da página */
@@ -206,7 +207,6 @@ h3{
 .Adcionar-carrinho{
     display: flex;
     /* border: solid red 2px; */
-
 }
 
 .Button-Style{
