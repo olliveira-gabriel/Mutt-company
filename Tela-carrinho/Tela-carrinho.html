@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tela-carrinho.css">
+    <title>carrinho</title>
+</head>
+<body>
+    <main class="Container-Principal">
+        <!-- Define a seção principal do conteúdo da página -->
+        <header class="Cabecalho">
+            <!-- Define o cabeçalho da página -->
+            <img id="Logo-Cabecalho" class="MUTT-logo" src="imagens/imagens-header/Logo DARK.png" alt="Logo MUTT COMPANY" onclick="Logo_Header()">
+            <!-- Insere a logo da empresa, o `onclick="Logo_Header()"` chama a função JavaScript "Logo_Header()" quando a logo é clicada. -->
+            <h1 class="Titulo">MUTT COMPANY</h1>
+            <!-- Define o título do header -->
+            <div class="icons">
+                <!-- Contém os ícones do carrinho e do usuário -->
+                <div class="carrinho">
+                    <!-- Define o ícone do carrinho -->
+                    <img class="Carrinho-logo" src="imagens/imagens-header/Carrinho branco.png" alt="Carrinho">
+                    <!-- Insere a imagem do carrinho -->
+                    <p>Carrinho</p>
+                    <!-- Define o texto "Carrinho" -->
+                </div>
+                <div id="Entrar" class="user" onclick="Login_Header()">
+                    <!-- Define o ícone do usuário -->
+                    <img class="User-logo" src="imagens/imagens-header/User .png" >
+                    <!-- Insere a imagem do usuário -->
+                    <p>Entrar</p>
+                    <!-- Define o texto "Entrar" -->
+                </div>
+            </div>
+        </header>
+        <section class="Primeira-sessao">
+            <h1>meu carrinho</h1>
+            <p id="nome_produto"></p>
+            <p id="tamanho_produto"></p>
+            <img id="img_produto" src="" alt="">
+            <p id="Valor_produto"></p>
+
+        </section>
+    </main>
+    <script src="Tela-carrinho.js"></script>
+</body>
+</html>
