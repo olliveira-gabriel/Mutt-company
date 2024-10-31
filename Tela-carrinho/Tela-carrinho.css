@@ -77,8 +77,20 @@ Container-Principal {
     margin: 0; /* Remove a margem superior e inferior do texto do usuário */
     text-align: center; /* Alinha o texto do usuário no centro */
 }
+.informacoes{
+    display: flex;
+    flex-direction: row;
+}
 
 .Primeira-sessao{
+    width: 55vw;
+    margin: 10% 0% 0% 3%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Segunda-sessao{
     width: 55vw;
     margin: 10% 0% 0% 3%;
     display: flex;
