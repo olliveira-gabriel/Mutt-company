@@ -1,28 +1,37 @@
-    const info_produtos = JSON.parse(localStorage.getItem('carrinho')) || []
+   
+   const info_produtos = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const produtos_carrinhos = document.getElementById('lista');
+    produtos_carrinhos.innerHTML = '';
+    let total = 0
+       
+    function exibir_carrinho(){
 
-    
-    
-    
-    
-    
-    const nome = info_produtos[0].nome;
-    
-    const tamanho = info_produtos[0].valorTamanho;
-    
-    const img = info_produtos[0].foto;
-    
-    const valor = info_produtos[0].preco;
-    
-    
-    
-    document.getElementById("nome_produto").innerHTML = nome;    
-    
-    document.getElementById("tamanho_produto").innerHTML = (`Tamanho: ${tamanho}`);  
-    
-    document.getElementById("img_produto").src = img ;
-    
-    document.getElementById("img_produto").style.width = '100px';
-    
-    document.getElementById("Valor_produto").innerHTML = valor;
 
+        for (const i in info_produtos){
+            const produto = info_produtos[i];
+            console.log(produto);
+            const li = document.createElement('li');
+            const nome = info_produtos[i].nome;
+            const tamanho = info_produtos[i].valorTamanho;
+            const img = document.createElement('img');
+            const valor = info_produtos[i].preco;
+            img.src = info_produtos[i].foto;
+            img.style.width = '200px';
+            li.classList.add('produto-linha')
+            li.innerHTML = 
+            `${nome}<br> <br>
+            Tamanho: ${tamanho}<br> <br>
+            Valor: ${valor}`;
+            total = total + parseFloat(valor);
+            
+            produtos_carrinhos.appendChild(li);
+            produtos_carrinhos.appendChild(img);
+            
+        }
+        console.log(total)
+    }
     
+    exibir_carrinho()
+
+
+
