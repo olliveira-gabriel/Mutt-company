@@ -90,6 +90,11 @@ Container-Principal {
     
 }
 
+.produto-linha{
+    list-style-type: none;
+    
+}
+
 .Segunda-sessao{
     width: 55vw;
     margin: 10% 0% 0% 3%;
