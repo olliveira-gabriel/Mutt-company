@@ -1,3 +1,17 @@
+function Logo_Header(){
+    // Redireciona o usuário para a página "Tela-princial.html"
+    window.location.href="../tela-principal/Tela-princial.html";
+}
+
+function Login_Header(){
+    // Redireciona o usuário para a página "Tela-Login.html" localizada na pasta "Tela-login"
+    window.location.href="../Tela Login/Tela-Login.html";
+}
+function carrinho_Header(){
+    // Redireciona o usuário para a página "Tela-carrinho.html" localizada na pasta "Tela-login"
+    window.location.href="../Tela-carrinho/Tela-carrinho.html";
+}
+
 
     const info_produtos = JSON.parse(localStorage.getItem('carrinho')) || [];
     const produtos_carrinhos = document.getElementById('lista');
