@@ -35,21 +35,22 @@ function carrinho_Header(){
             li.innerHTML = 
             `${nome}<br> <br>
             Tamanho: ${tamanho}<br> <br>
-            Valor: ${valor}`;
+            Valor: ${valor} <br> <br>
+            <a href="../tela-principal/Tela-princial.html">continuar comprando</a>`;
             total = total + parseFloat(valor);
             
             produtos_carrinhos.appendChild(li);
             produtos_carrinhos.appendChild(img);
             
             
-            document.getElementById('subtotal').innerHTML = (`Subtotal: R$${total}`)
+            document.getElementById('subtotal').innerHTML = (`Subtotal: R$${total.toFixed(2)}`)
             if (total > 750){
                 document.getElementById('desconto').innerHTML = (`Subtotal: 20%`)
             }else{
                 document.getElementById('desconto').innerHTML = (`Subtotal: 0%`)
             }
         }
-        console.log(total)
+        console.log(total.toFixed(2))
         const desconto = (total * 20) / 100
         console.log(desconto.toFixed(2))
         Valor_total = total - desconto.toFixed(2)
@@ -57,10 +58,3 @@ function carrinho_Header(){
 
     }
     exibir_carrinho()
-    
-
-        
-
-
-
-
