@@ -48,3 +48,8 @@ function Tela_tenis_tnpsg(){
     window.location.href="../Tela-produtos-nike/nike_tn_psg/nike_tn_psg.html";
 
 }
+
+function Tela_tenis_mizunols(){
+    window.location.href="../Mizuno Wave Prophecy LS Future Garden Summer SandMizuno Wave Prophecy LS Future Garden Summer Sand.html";
+
+}
