@@ -50,6 +50,12 @@ function Tela_tenis_tnpsg(){
 }
 
 function Tela_tenis_mizunols(){
-    window.location.href="../Mizuno Wave Prophecy LS Future Garden Summer SandMizuno Wave Prophecy LS Future Garden Summer Sand.html";
+    window.location.href="../tela-produtos-mizuno/Mizuno Wave Prophecy LS Future Garden Summer Sand/Mizuno Wave Prophecy LS Future Garden Summer Sand.html";
 
 }
+
+function Tela_tenis_mizunodesert(){
+    window.location.href="../tela-produtos-mizuno/Mizuno Wave Prophecy LS Desert Risk Red Diva Blue/Mizuno Wave Prophecy LS Desert Risk Red Diva Blue.html";
+
+}
+
