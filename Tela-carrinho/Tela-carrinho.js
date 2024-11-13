@@ -41,6 +41,10 @@ function carrinho_Header(){
             
             produtos_carrinhos.appendChild(li);
             produtos_carrinhos.appendChild(img);
+
+            const linha = document.createElement('hr');
+            linha.style.border = '1px solid black';
+            produtos_carrinhos.appendChild(linha);
             
             
             document.getElementById('subtotal').innerHTML = (`Subtotal: RS ${total.toFixed(2)}`)
