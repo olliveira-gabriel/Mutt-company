@@ -8,6 +8,11 @@ function Login_Header(){
     window.location.href="../Tela Login/Tela-Login.html";
 }
 
+function carrinho_Header(){
+    // Redireciona o usuário para a página "Tela-carrinho.html" localizada na pasta "Tela-login"
+    window.location.href="../Tela-carrinho/Tela-carrinho.html";
+}
+
 function Tela_tenis_airmax95(){
     window.location.href="../Tela-produtos-nike/nike_airmax95/nike_airmax95.html";
 
