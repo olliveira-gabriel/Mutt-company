@@ -1,0 +1,315 @@
+body{
+    font-family: MUTT;
+    background-image: url(imagens/wallpaper.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: MUTT;
+    src: url(Dash-Horizon-Demo.otf);
+  }
+
+Container-Principal {
+    display: flex; 
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    height: 100vh; /* Define a altura do container como 100% da altura */
+    width: 100%; /* Define a largura do container como 100% da largura*/
+    top: 0; /* Posiciona o container no topo da tela */
+    left: 0; /* Posiciona o container na esquerda da tela */
+    margin: 0%;
+}
+
+/* Cabeçalho */
+.Cabecalho {
+    background-color: black; /* Define a cor de fundo do cabeçalho como preto */
+    display: flex; 
+    align-items: center; /* Alinha os itens do cabeçalho verticalmente no centro */
+    color: #ffff; /* Define a cor do texto do cabeçalho como branco */
+    justify-content: space-between; /* Distribui os itens do cabeçalho uniformemente entre as extremidades */
+    padding: 0% 2%; /* Define o espaçamento interno do cabeçalho */
+    position: fixed; /* Define o header como fixo */
+    top: 0; /* Posiciona o header na parte superior da tela */
+    left: 0; /* Posiciona o header na parte esquerda da tela */
+    width: 99%; /* Define a largura do header como 99% da tela */
+}
+
+.Titulo {
+    font-size: 35px; 
+    font-family: MUTT;
+}
+
+/* Carrinho e Login */
+.icons {
+    display: flex; 
+    flex-direction: row; /* Define a direção dos ícones como linha */
+}
+
+.MUTT-logo {
+    width: 100px; /* Define a largura da logo como 100px */
+    height: 100px; /* Define a altura da logo como 100px */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre a logo */
+}
+
+.carrinho {
+    display: flex; 
+    flex-direction: column; /* Define a direção dos itens do carrinho como coluna */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o carrinho */
+}
+
+.Carrinho-logo {
+    width: 100px; /* Define a largura da imagem do carrinho como 100px */
+    height: 100px; /* Define a altura da imagem do carrinho como 100px */
+    margin-bottom: -28px; /* Define a margem inferior da imagem do carrinho como -28px */
+}
+
+.carrinho p {
+    margin: 0; /* Remove a margem superior e inferior do texto do carrinho */
+    text-align: center; /* Alinha o texto do carrinho no centro */
+}
+
+.user {
+    display: flex; 
+    flex-direction: column; /* Define a direção dos itens do usuário como coluna */
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre o usuário */
+}
+
+.User-logo {
+    width: 100px; /* Define a largura da imagem do usuário como 100px */
+    height: 100px; /* Define a altura da imagem do usuário como 100px */
+    margin-bottom: -28px; /* Define a margem inferior da imagem do usuário como -28px */
+}
+
+.user p {
+    margin: 0; /* Remove a margem superior e inferior do texto do usuário */
+    text-align: center; /* Alinha o texto do usuário no centro */
+}
+.Primeira-sessao{
+    display: flex;
+    flex-direction: row;
+    margin: 7% 0% 1% 21%;
+    padding-left: 100px;
+    height: 700px;
+    width: 45%;
+    justify-content: flex-start;
+    gap: 200px;
+    /* border: solid black 3px; */
+}
+.imagens{
+    display: flex;
+    flex-direction: row;
+}
+.imagens1{
+    display: flex;
+    flex-direction: column;
+}
+.imagens1 img{
+    width: 350px;
+    height: 350px;
+    /* margin: 2%; */
+}
+.Segunda-sessao{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+.botao-tamanho {
+    font-size: 20px;
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+    background-color: #D9D9D9; /* Cor de fundo */
+    border: 3px solid rgb(0, 0, 0);
+    display: inline-block; /* Exibe como bloco inline */
+    text-align: center; /* Centraliza o texto */
+    line-height: 40px; /* Alinha o texto verticalmente */
+    margin: 5px; /* Espaçamento entre os botões */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+  }
+.botao-tamanho input[type="radio"] {
+    display: none; /* Esconde o botão de rádio padrão */
+}
+.botao-tamanho input[type="radio"]:checked + label{
+    display: flex;
+
+    background-color: #D9D9D9; /* Cor de fundo */
+    padding-left: 9px;
+    /* margin-left: -1px; */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    background-color: #000000;
+    color: white;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Faz o footer ocupar toda a largura da página */
+    background-color: #000000; /* Define a cor de fundo do footer */
+    color: #ffffff;
+}
+.sobre{
+    width: 20%;
+}
+.contato img{
+    width: 40%;
+    padding: 2%;
+}
+.redes{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+.rodape p{
+    text-align: center; 
+}
+.MUTT-footer {
+    width: 10%; 
+    height: 10%; 
+    align-items: baseline;
+    margin: 2% 0% 0% 0%;
+      
+}
+
+.Dados-pruduto {
+    font-family: MUTT;
+    padding: 20px; 
+    width: 700px;
+    height: 1000px;
+    background-color: #000000; 
+    border: 1px solid #999; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.Dados-pruduto h1 {
+    font-family: MUTT;
+    font-size: 40px; 
+    margin-bottom: 10px; 
+    color: rgb(255, 255, 255); 
+}
+
+.Dados-pruduto h2 {
+    font-family: MUTT;
+    margin-bottom: 20px; 
+    margin-top: 0;
+    font-size: 30px; 
+    color: #555; 
+}
+
+.Dados-pruduto input[type="text"],
+.Dados-pruduto input[type="number"] {
+    font-family: MUTT;
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #999; 
+    border-radius: 5px; 
+    margin-bottom: 15px; 
+    font-size: 18px;
+    color: white; 
+    background-color: #000000;
+}
+
+.Adcionar-carrinho {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+    width: 100%; 
+}
+
+.Button-Style {
+    font-family: MUTT;
+    background-color: #ffffff;
+    color: #000000; 
+    transition: background-color 0.3s, transform 0.3s; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 20px;
+    cursor: pointer; 
+}
+
+.Limpar-Lista{
+    font-family: MUTT;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Button-Style:hover {
+    background-color: #000000; 
+    color: white;
+}
+
+#produtos {
+    width: 100%; 
+    margin-top: 20px;
+    color: white;
+}
+
+#produtos h2 {
+    text-align: center; 
+    margin-bottom: 10px;
+    color: white;
+}
+
+#produtos button {
+    margin-top: 10px; 
+    padding: 10px 15px; 
+}
+input[type="radio"] {
+    display: none; 
+}
+
+.radio-label {
+    font-size: 17px;
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+    cursor: pointer;
+    color: white;
+}
+
+.radio-label span {
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #999;
+    border-radius: 50%; 
+    background-color: white; 
+    margin-right: 10px; 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+
+input[type="radio"]:checked + span {
+    background-color: #5e5a5a; 
+    border-color: #000000; 
+}
+
+.Tipo-Produto{
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 2px; */
+}
+
+
