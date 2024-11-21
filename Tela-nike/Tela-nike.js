@@ -52,42 +52,46 @@ function exibirProduto() {
 listaProdutos.innerHTML = '';
 
   
-for (let produto of produtos) {
-  
-    const li = document.createElement('li');
-    li.classList.add('produto-item'); 
+if(produtos[0].marca === 'Nike'){
 
-
-    const img = document.createElement('img');
-    img.src = produto.urlImage; 
-    img.alt = produto.nome;  
-    img.classList.add('produto-img');
-
- 
-    const nome = document.createElement('p');
-    nome.textContent = produto.nome;
-    nome.classList.add('produto-nome');  // Adiciona uma classe CSS
-
-    const preco = document.createElement('p');
-    preco.innerHTML = `<span></span> RS${produto.preco}`; 
-    preco.classList.add('produto-preco');  // Adiciona uma classe CSS
-
-    const descricao = document.createElement('p');
-    descricao.innerHTML = `<span>Descrição:</span> ${produto.descricao}`; 
-    descricao.classList.add('produto-descricao');  // Adiciona uma classe CSS
-
-    const tipodetamanho = document.createElement('p');
-    tipodetamanho.innerHTML = `<span>Tipo de Tamanho:</span> ${produto.tipodetamanho}`; 
-    tipodetamanho.classList.add('produto-tipodetamanho');  // Adiciona uma classe CSS
- 
-    li.appendChild(img);
-    li.appendChild(nome);
-    li.appendChild(preco);
-    li.appendChild(descricao);
-    li.appendChild(tipodetamanho)
-
-   
-    listaProdutos.appendChild(li);
+    // 4. Percorre cada produto no array "produtos" e cria um card para exibi-lo
+    for (let produto of produtos) {
+        
+        const li = document.createElement('li');
+        li.classList.add('produto-item'); 
+        
+        
+        const img = document.createElement('img');
+        img.src = produto.urlImage; 
+        img.alt = produto.nome;  
+        img.classList.add('produto-img');
+        
+        
+        const nome = document.createElement('p');
+        nome.textContent = produto.nome;
+        nome.classList.add('produto-nome');  // Adiciona uma classe CSS
+        
+        const preco = document.createElement('p');
+        preco.innerHTML = `<span></span> RS${produto.preco}`; 
+        preco.classList.add('produto-preco');  // Adiciona uma classe CSS
+        
+        const descricao = document.createElement('p');
+        descricao.innerHTML = `<span>Descrição:</span> ${produto.descricao}`; 
+        descricao.classList.add('produto-descricao');  // Adiciona uma classe CSS
+        
+        const tipodetamanho = document.createElement('p');
+        tipodetamanho.innerHTML = `<span>Tipo de Tamanho:</span> ${produto.tipodetamanho}`; 
+        tipodetamanho.classList.add('produto-tipodetamanho');  // Adiciona uma classe CSS
+        
+        li.appendChild(img);
+        li.appendChild(nome);
+        li.appendChild(preco);
+        li.appendChild(descricao);
+        li.appendChild(tipodetamanho)
+        
+        
+        listaProdutos.appendChild(li);
+    }
 }
 }
 
