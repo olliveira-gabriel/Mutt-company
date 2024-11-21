@@ -33,4 +33,6 @@ function colocar_carrinho(nome, foto, preco){
     } 
     localStorage.setItem('carrinho', JSON.stringify(carrinho))
 
+    window.location.href="../Tela-carrinho/Tela-carrinho.html"
+
 }
