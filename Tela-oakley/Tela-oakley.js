@@ -50,56 +50,54 @@ function Tela_moletom_BigSkull(){
 
 }
 
-function exibirProduto() {
-   
+function exibirMarca(marca, idListaDoHtml) {
     const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
-
    
-    const listaProdutos = document.getElementById('listaProdutos');
-    
-    
-    listaProdutos.innerHTML = '';
+    const lista = document.getElementById(idListaDoHtml);
 
-  
-    for (let produto of produtos) {
-  
-        const li = document.createElement('li');
-        li.classList.add('produto-item'); 
+    for (const index in produtos) {
+        const produto = produtos[index];
+        if (produto.marca === marca) {
+            const li = document.createElement('li');
+            li.classList.add('produto-item'); 
         
-    
-    
-        const img = document.createElement('img');
-        img.src = produto.urlImage; 
-        img.alt = produto.nome;  
-        img.classList.add('produto-img');
-    
-     
-        const nome = document.createElement('p');
-        nome.textContent = produto.nome;
-        nome.classList.add('produto-nome');  // Adiciona uma classe CSS
-    
-        const preco = document.createElement('p');
-        preco.innerHTML = `<span></span> RS${produto.preco}`; 
-        preco.classList.add('produto-preco');  // Adiciona uma classe CSS
-    
-        const descricao = document.createElement('p');
-        descricao.innerHTML = `<span>Descrição:</span> ${produto.descricao}`; 
-        descricao.classList.add('produto-descricao');  // Adiciona uma classe CSS
-    
-        const tipodetamanho = document.createElement('p');
-        tipodetamanho.innerHTML = `<span>Tipo de Tamanho:</span> ${produto.tipodetamanho}`; 
-        tipodetamanho.classList.add('produto-tipodetamanho');  // Adiciona uma classe CSS
-     
-        li.appendChild(img);
-        li.appendChild(nome);
-        li.appendChild(preco);
-        li.appendChild(descricao);
-        li.appendChild(tipodetamanho)
-    
-       
-        listaProdutos.appendChild(li);
+            const img = document.createElement('img');
+            img.src = produto.urlImage; 
+            img.alt = produto.nome;  
+            img.classList.add('produto-img');
+        
+         
+            const nome = document.createElement('p');
+            nome.textContent = produto.nome;
+            nome.classList.add('produto-nome');  // Adiciona uma classe CSS
+        
+            const preco = document.createElement('p');
+            preco.innerHTML = `<span></span> RS${produto.preco}`; 
+            preco.classList.add('produto-preco');  // Adiciona uma classe CSS
+        
+            const descricao = document.createElement('p');
+            descricao.innerHTML = `<span>Descrição:</span> ${produto.descricao}`; 
+            descricao.classList.add('produto-descricao');  // Adiciona uma classe CSS
+        
+            const tipodetamanho = document.createElement('p');
+            tipodetamanho.innerHTML = `<span>Tipo de Tamanho:</span> ${produto.tipodetamanho}`; 
+            tipodetamanho.classList.add('produto-tipodetamanho');  // Adiciona uma classe CSS
+         
+            li.appendChild(img);
+            li.appendChild(nome);
+            li.appendChild(preco);
+            li.appendChild(descricao);
+            li.appendChild(tipodetamanho)
+        
+           
+            lista.appendChild(li);
+
+
+        }
     }
-    }
+}
+
+
+    window.onload = exibirMarca('Oakley', 'listaProdutos');
+
     
-    
-    window.onload = exibirProduto;
