@@ -7,6 +7,15 @@ function Login_Header(){
     // Redireciona o usuário para a página "Tela-Login.html" localizada na pasta "Tela-login"
     window.location.href="../Tela Login/Tela-Login.html";
 }
+
+function removerProduto(index) {
+    // Remove o produto do carrinho com base no índice fornecido
+    info_produtos.splice(index, 1);
+    localStorage.setItem('carrinho', JSON.stringify(info_produtos));
+    location.reload(); // Atualiza a página para refletir a remoção do produto
+}
+
+
 function carrinho_Header(){
     // Redireciona o usuário para a página "Tela-carrinho.html" localizada na pasta "Tela-login"
     window.location.href="../Tela-carrinho/Tela-carrinho.html";
@@ -29,6 +38,7 @@ function carrinho_Header(){
             const tamanho = info_produtos[i].valorTamanho;
             const img = document.createElement('img');
             const valor = info_produtos[i].preco;
+            const botaoRemover = document.createElement('button');
             img.src = info_produtos[i].foto;
             img.style.width = '300px';
             li.classList.add('produto-linha')
@@ -36,7 +46,10 @@ function carrinho_Header(){
             `${nome}<br> <br>
             Tamanho: ${tamanho}<br> <br>
             Valor: ${valor} <br> <br>
-            <a href="../tela-principal/Tela-princial.html"></a>`;
+            <a href="../tela-principal/Tela-princial.html"></a> <br> <br`;
+            botaoRemover.innerText = 'Remover Produto';
+            botaoRemover.addEventListener('click', () => removerProduto(i));
+            li.appendChild(botaoRemover);
             total = total + parseFloat(valor);
             
             produtos_carrinhos.appendChild(li);
@@ -60,5 +73,7 @@ function carrinho_Header(){
         Valor_total = total - desconto.toFixed(2)
         document.getElementById('valortotal').innerHTML = (`Valor Total: RS${Valor_total.toFixed(2)}`)
 
+        
     }
+    
     exibir_carrinho()
