@@ -17,7 +17,7 @@ function logar() {
         const login = JSON.parse(localStorage.getItem('BancoDeDados'));
         
         if (login && usuario === login.usuario && senha === login.senha) {
-            window.location.href = "../tela-principal/Tela-principal.html";
+            window.location.href="../../tela-principal/Tela-princial.html";
         } else {
             mostrarModal('Usuário ou senha inválidos');
         }
