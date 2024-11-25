@@ -1,3 +1,8 @@
+
+<p align="center">
+  <img width="500" height="500" src="https://github.com/user-attachments/assets/227fe678-d57f-45df-9fc5-c990bede2d3f" alt="MUTT">
+</p>
+
 <h1 align="center"> MUTT company </h1>
 
 A MUTT Company é um projeto escolar em grupo, onde desenvolvemos um site aplicando os conhecimentos adquiridos ao longo do ano. A proposta da MUTT é criar uma loja virtual de roupas.
