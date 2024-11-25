@@ -26,6 +26,7 @@ body{
     top: 0; /* Posiciona o header na parte superior da tela */
     left: 0; /* Posiciona o header na parte esquerda da tela */
     width: 99%; /* Define a largura do header como 99% da tela */
+    font-family: MUTT;
 }
 
 .Titulo {
