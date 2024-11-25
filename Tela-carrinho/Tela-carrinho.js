@@ -48,6 +48,7 @@ function carrinho_Header(){
             Valor: ${valor} <br> <br>
             <a href="../tela-principal/Tela-princial.html"></a> <br> <br`;
             botaoRemover.innerText = 'Remover Produto';
+            botaoRemover.classList.add('removerp')
             botaoRemover.addEventListener('click', () => removerProduto(i));
             li.appendChild(botaoRemover);
             total = total + parseFloat(valor);
