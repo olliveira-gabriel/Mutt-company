@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tela-Registro.css">
+    <title>Registro MUTT</title>
+    
+</head>
+<body>
+
+    <main class="Container-Principal">
+        <!-- Define a seção principal do conteúdo da página -->
+        <header class="Cabecalho">
+            <!-- Define o cabeçalho da página -->
+            <img id="Logo-Cabecalho" class="MUTT-logo" src="imagens/imagens-header/Logo DARK.png" alt="Logo MUTT COMPANY" onclick="Logo_Header()">
+            <!-- Insere a logo da empresa, O  `onclick="Logo_Header()"` chama a função JavaScript "Logo_Header()" quando a logo é clicada. -->
+            <h1 class="Titulo">MUTT COMPANY</h1>
+            <!-- Define o título principal da página -->
+            <div class="icons">
+                <!-- Contém os ícones do carrinho e do usuário -->
+                <div class="carrinho">
+                    <!-- Define o ícone do carrinho -->
+                    <img class="Carrinho-logo" src="imagens/imagens-header/Carrinho branco.png" alt="Carrinho">
+                    <!-- Insere a imagem do carrinho -->
+                    <p>Carrinho</p>
+                    <!-- Define o texto "Carrinho" -->
+                </div>
+                <div class="user">
+                    <!-- Define o ícone do usuário -->
+                    <img class="User-logo" src="imagens/imagens-header/User .png" alt="user" onclick="Login_Header()">
+                    <!-- Insere a imagem do usuário -->
+                    <p>Entrar</p>
+                    <!-- Define o texto "Entrar" -->
+                </div>
+            </div>
+        </header>
+
+        <div class="Card-Registro">
+            <h1> R e g i s t r o </h1>
+
+            <form>
+
+                <input class="Input-Form" type="text" placeholder="Usuario" id="User">
+
+                <input class="Input-Form" type="email" placeholder="Email" id="Email">
+
+                <input class="Input-Form" type="password" placeholder="Senha" id="Senha">
+
+                <input class="Input-Form" type="password" placeholder="Confirmar Senha" id="Confirmar_senha">
+
+            </form>
+
+            <div>
+                <div class="Aceitar-Termos">
+                    <label class="checkbox" onclick="Abrir_Termos()"><u>Aceitar Termos</u></label> 
+                    <input id="termos_de_contrato" class="" type="checkbox">
+                </div>
+                    <div  id="modal_termos" class="modal_termos" >
+                        <div class="conteudo_modal">
+                            <h2><span style="color: rgb(255, 255, 255);">Política Privacidade</span></h2><p><span style="color: rgb(255, 255, 255);">A sua privacidade é importante para nós. É política do Mutt Company respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a href="https://www.mutt-company" class="href">Mutt Company</a>, e outros sites que possuímos e operamos.</span></p><p><span style="color: rgb(255, 255, 255);">Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</span></p><p><span style="color: rgb(255, 255, 255);">Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</span></p><p><span style="color: rgb(255, 255, 255);">Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</span></p><p><span style="color: rgb(255, 255, 255);">O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas&nbsp;</span><a href="https://politicaprivacidade.com/" rel="noopener noreferrer" target="_blank" style="background-color: transparent; color: rgb(255, 255, 255);">políticas de privacidade</a><span style="color: rgb(255, 255, 255);">.</span></p><p><span style="color: rgb(255, 255, 255);">Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</span></p><p><span style="color: rgb(255, 255, 255);">O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</span></p><p><span style="color: rgb(255, 255, 255);"><ul><li><span style="color: rgb(255, 255, 255);">O serviço Google AdSense que usamos para veicular publicidade usa um cookie DoubleClick para veicular anúncios mais relevantes em toda a Web e limitar o número de vezes que um determinado anúncio é exibido para você.</span></li><li><span style="color: rgb(255, 255, 255);">Para mais informações sobre o Google AdSense, consulte as FAQs oficiais sobre privacidade do Google AdSense.</span></li><li><span style="color: rgb(255, 255, 255);">Utilizamos anúncios para compensar os custos de funcionamento deste site e fornecer financiamento para futuros desenvolvimentos. Os cookies de publicidade comportamental usados ​​por este site foram projetados para garantir que você forneça os anúncios mais relevantes sempre que possível, rastreando anonimamente seus interesses e apresentando coisas semelhantes que possam ser do seu interesse.</span></li><li><span style="color: rgb(255, 255, 255);">Vários parceiros anunciam em nosso nome e os cookies de rastreamento de afiliados simplesmente nos permitem ver se nossos clientes acessaram o site através de um dos sites de nossos parceiros, para que possamos creditá-los adequadamente e, quando aplicável, permitir que nossos parceiros afiliados ofereçam qualquer promoção que pode fornecê-lo para fazer uma compra.</span></li></ul><p><br></p></span></p><h3><span style="color: rgb(255, 255, 255);"></p>
+                        </div>
+                    </div>
+            </div>
+
+            <div>
+                <button class="Button-Style" onclick="Registro_usuario()">
+                    Registrar
+                </button>
+            </div>
+
+        </div>
+        <div id="modalmsg" class="modalmsg">
+            <div class="conteudomsg">
+                <span class="close" onclick="fechar_modal_msg()">&times;</span>
+                <img id="modalImage" src="" alt="Erro" style="display:none;"/>
+                <p id="modalMessage"></p>
+            </div>
+        </div>
+    </main> 
+
+    <script src="Tela-registro.js"></script>
+</body>
+</html>
