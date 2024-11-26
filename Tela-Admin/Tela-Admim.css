@@ -191,7 +191,8 @@ h3{
     font-family: MUTT;
     padding: 20px; 
     width: 700px;
-    height: 1000px;
+    min-height: 1400px;
+    height: auto;
     background-color: #000000; 
     border: 1px solid #999; 
     border-radius: 10px; 
