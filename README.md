@@ -40,6 +40,10 @@ A MUTT Company é um projeto escolar em grupo, onde desenvolvemos um site aplica
 
 ![Modal Registro](https://github.com/user-attachments/assets/cf990b92-e79a-4fc6-b8b9-85974591919d)
 
+## Modal erro 
+
+![dasdsa](https://github.com/user-attachments/assets/b4a4d5a8-2d4a-46f9-8810-d6316af0d947)
+
 ## Tela Principal.
 
 ![Tela Principal](https://github.com/user-attachments/assets/8de4d110-2ec1-4298-8b84-fe3fab3e3972)
