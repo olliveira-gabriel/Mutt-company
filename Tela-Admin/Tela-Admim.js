@@ -50,16 +50,23 @@ function cadastrarProduto() {
 
     if (produto.nome && produto.preco && produto.descricao && produto.urlImage && produto.tipodetamanho && produto.marca) {
         let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+        
+        if (produtoEditandoIndex !== null) {
+            
+            produtos[produtoEditandoIndex] = produto;  // Atualiza o produto no índice correspondente
+            produtoEditandoIndex = null;
+         }else {
         produtos.push(produto);
+         }
         localStorage.setItem('produtos', JSON.stringify(produtos));
-
         limparFormulario();
         exibirProdutos();
-    } else {
+    
+    
+          }else{
         alert('Preencha todos os campos para cadastrar o produto!');
-    }
 }
-
+}
 function limparFormulario() {
     document.getElementById('nome').value = '';
     document.getElementById('preco').value = '';
