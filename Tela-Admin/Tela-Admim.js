@@ -31,6 +31,8 @@ function colocar_carrinho(nome, foto, preco){
     localStorage.setItem('carrinho', JSON.stringify(carrinho))
 
 }
+let produtoEditandoIndex = null;
+
 function cadastrarProduto() {
     const nome = document.getElementById('nome').value;
     const preco = document.getElementById('preco').value;
@@ -51,7 +53,7 @@ function cadastrarProduto() {
     if (produto.nome && produto.preco && produto.descricao && produto.urlImage && produto.tipodetamanho && produto.marca) {
         let produtos = JSON.parse(localStorage.getItem('produtos')) || [];
         
-        if (produtoEditandoIndex !== null) {
+        if (produtoEditandoIndex != null) {
             
             produtos[produtoEditandoIndex] = produto;  
             produtoEditandoIndex = null;
@@ -123,8 +125,8 @@ function editarProduto(index) {
     document.getElementById('preco').value = produto.preco;
     document.getElementById('descricao').value = produto.descricao;
     document.getElementById('urlImage').value = produto.urlImage;
-    document.getElementById('tipodepeça').value = produto.tipodetamanho;
-    document.getElementById('marca').value = produto.marca;
+    document.querySelector(`input[name='tipodepeça'][value='${produto.tipodetamanho}']`).checked = true;
+    document.querySelector(`input[name='marca'][value='${produto.marca}']`).checked = true;
 
     produtoEditandoIndex = index;  
 }
