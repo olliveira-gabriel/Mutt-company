@@ -53,7 +53,7 @@ function cadastrarProduto() {
         
         if (produtoEditandoIndex !== null) {
             
-            produtos[produtoEditandoIndex] = produto;  // Atualiza o produto no índice correspondente
+            produtos[produtoEditandoIndex] = produto;  
             produtoEditandoIndex = null;
          }else {
         produtos.push(produto);
