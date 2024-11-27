@@ -63,9 +63,9 @@ function carrinho_Header(){
             
             document.getElementById('subtotal').innerHTML = (`Subtotal: RS ${total.toFixed(2)}`)
             if (total > 750){
-                document.getElementById('desconto').innerHTML = (`Subtotal: 20%`)
+                document.getElementById('desconto').innerHTML = (`Desconto: 20%`)
             }else{
-                document.getElementById('desconto').innerHTML = (`Subtotal: 0%`)
+                document.getElementById('desconto').innerHTML = (`Desconto: 0%`)
             }
         }
         console.log(total.toFixed(2))
