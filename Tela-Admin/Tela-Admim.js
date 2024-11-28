@@ -102,14 +102,7 @@ function exibirProdutos() {
         listaProdutos.appendChild(editBtn);
         listaProdutos.appendChild(img);
         listaProdutos.appendChild(li);
-    }
-    if(marca == Nike){
-
-        window.onload = exibirProdutos;
-    }
-    else if(marca == Oakley){
-        window.onload = exibirProdutos;
-    }
+    }
 }
 
 
